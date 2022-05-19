@@ -23,6 +23,9 @@
         -webkit-appearance:none;
             margin: 0;
     }
+    input[type="number"]{
+        -moz-appearance:textfield;
+    }
 </style>
 
 <body>
@@ -55,8 +58,8 @@
 
                     <tr>
                         <td class="label-td">Pickup Date</td>
-                        <td><input type="date" class="bg-color" name="" id="ft-trim-1"></td>
-                        <td><input type="date" class="bg-color" name="" id="ft-trim-2"></td>
+                        <td><input type="date" class="bg-color" name="" id="ft-d-1"></td>
+                        <td><input type="date" class="bg-color" name="" id="ft-d-2"></td>
                     </tr>
                     <tr>
                         <td class="label-td">Delivery Date</td>
@@ -108,8 +111,8 @@
                     </tr>
                     <tr>
                         <td class="label-td">Days</td>
-                        <td><input type="number" class="bg-color" name="" id="ft-d-1"></td>
-                        <td><input type="number" class="bg-color" name="" id="ft-d-2"></td>
+                        <td><input type="number" class="disable" readonly name="" id="ft-d-1"></td>
+                        <td><input type="number" class="disable" readonly name="" id="ft-d-2"></td>
                     </tr>
                     <tr>
                         <td class="label-td">Rate Per Mile $</td>
