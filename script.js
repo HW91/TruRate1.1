@@ -2,8 +2,15 @@
 
             // Load 1
 
-
-
+            fuction calculateDays(){
+            var d1= document.getElementById("d1").value;
+            var d2= document.getElementById("d2").value;
+            const dateOne = new Date(d1);
+            const dateTwo = new Date(d2);
+            const time = Math.abs(dateTwo - dateOne);
+            const days = Math.ceil(time / (1000 * 60 * 60 24));
+            documnent.getElementById("output").innerHTML=days;
+            }
 
             $('#ft-trim-1').on('input', function () {
                 var value1 = parseFloat($('#ft-trim-1').val());
