@@ -166,9 +166,9 @@ input[type=number] {
 .btn-1 {
     text-align: center;
     width: 100px;
-    border: none;
+    border: 1px solid black;
     font-size: 20px;
     background: #00A125;
-    color: white;
+    color: black;
 } 
 
