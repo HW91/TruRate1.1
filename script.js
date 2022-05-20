@@ -1,7 +1,3 @@
-        $(document).ready(function () {
-
-            // Load 1
-
             function calculateDays(){
             var d1= document.getElementById("d1").value;
             var d2= document.getElementById("d2").value;
@@ -10,7 +6,13 @@
             const time = Math.abs(dateTwo - dateOne);
             const days = Math.ceil(time / (1000 * 60 * 60 24));
             document.getElementById("output").innerHTML=days;
-            }
+            }      
+
+            $(document).ready(function () {
+
+            // Load 1
+
+
 
             $('#ft-trim-1').on('input', function () {
                 var value1 = parseFloat($('#ft-trim-1').val());
