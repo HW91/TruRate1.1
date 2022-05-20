@@ -1,8 +1,8 @@
             function calculateDays(){
             var d1= document.getElementById("pd1").value;
             var d2= document.getElementById("pd2").value;
-            const dateOne = new Date(d1);
-            const dateTwo = new Date(d2);
+            const dateOne = new Date(pd1);
+            const dateTwo = new Date(pd2);
             const time = Math.abs(dateTwo - dateOne);
             const days = Math.ceil(time / (1000 * 60 * 60 24));
             document.getElementById("output").innerHTML=days;
