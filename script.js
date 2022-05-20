@@ -1,6 +1,6 @@
             function calculateDays(){
-            var d1= document.getElementById("pd1").value;
-            var d2= document.getElementById("pd2").value;
+            var pd1= document.getElementById("pd1").value;
+            var pd2= document.getElementById("pd2").value;
             const dateOne = new Date(pd1);
             const dateTwo = new Date(pd2);
             const time = Math.abs(dateTwo - dateOne);
