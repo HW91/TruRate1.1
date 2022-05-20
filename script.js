@@ -55,10 +55,10 @@
 
             $('#ft-w-1').on('input click', function () {
                 var weight = parseFloat($('#ft-w-1').val());
-                var fuleReductionValue = (weight / 1000) * 0.005;
-                var fuleReductionDisplay = Math.round(fuleReductionValue * 100);
-                $('#ft-fr-1').val(fuleReductionDisplay);
-                $('#ft-frh-1').val(fuleReductionValue);
+                var fuelReductionValue = (weight / 1000) * 0.005;
+                var fuelReductionDisplay = Math.round(fuelReductionValue * 100);
+                $('#ft-fr-1').val(fuelReductionDisplay);
+                $('#ft-frh-1').val(fuelReductionValue);
                 $('#ft-fc-1').trigger('input');
                 $('#ft-rpm-1').trigger('click');
                 $('#ft-tdr-1').trigger('click');
@@ -67,20 +67,20 @@
 
             $('#ft-fc-1').on('input', function () {
                 var weight = parseFloat($('#ft-w-1').val());
-                var fuleReduction = parseFloat($('#ft-frh-1').val());
+                var fuelReduction = parseFloat($('#ft-frh-1').val());
                 var totalMiles = parseFloat($('#ft-tm-1').val());
                 var avgMiles = parseFloat($('#avg-mile-per-gallon').val());
-                var fulePrice = parseFloat($('#current-gas-price').val());
-                var fuleCost = (totalMiles / (avgMiles * (1 - fuleReduction)) * fulePrice).toFixed(2);
-                $('#ft-fc-1').val(fuleCost);
+                var fuelPrice = parseFloat($('#current-gas-price').val());
+                var fuelCost = (totalMiles / (avgMiles * (1 - fuelReduction)) * fuelPrice).toFixed(2);
+                $('#ft-fc-1').val(fuelCost);
                 $('#ft-tr-1').trigger('click');
             })
 
             $('#ft-tr-1').on('click', function () {
                 var rate = parseFloat($('#ft-r-1').val());
                 var totalMiles = parseFloat($('#ft-tm-1').val());
-                var fuleCost = parseFloat($('#ft-fc-1').val());
-                $('#ft-tr-1').val(((rate) - (fuleCost)).toFixed(2));
+                var fuelCost = parseFloat($('#ft-fc-1').val());
+                $('#ft-tr-1').val(((rate) - (fuelCost)).toFixed(2));
                 $('#ft-trpm-1').trigger('click');
             })
 
@@ -170,10 +170,10 @@
 
             $('#ft-w-2').on('input', function () {
                 var weight = parseFloat($('#ft-w-2').val());
-                var fuleReductionValue = (weight / 1000) * 0.005;
-                var fuleReductionDisplay = Math.round(fuleReductionValue * 100);
-                $('#ft-fr-2').val(fuleReductionDisplay);
-                $('#ft-frh-2').val(fuleReductionValue);
+                var fuelReductionValue = (weight / 1000) * 0.005;
+                var fuelReductionDisplay = Math.round(fuelReductionValue * 100);
+                $('#ft-fr-2').val(fuelReductionDisplay);
+                $('#ft-frh-2').val(fuelReductionValue);
                 $('#ft-fc-2').trigger('input');
                 $('#ft-rpm-2').trigger('click');
                 $('#ft-tdr-2').trigger('click');
@@ -183,20 +183,20 @@
 
             $('#ft-fc-2').on('input', function () {
                 var weight = parseFloat($('#ft-w-2').val());
-                var fuleReduction = parseFloat($('#ft-frh-2').val());
+                var fuelReduction = parseFloat($('#ft-frh-2').val());
                 var totalMiles = parseFloat($('#ft-tm-2').val());
                 var avgMiles = parseFloat($('#avg-mile-per-gallon').val());
-                var fulePrice = parseFloat($('#current-gas-price').val());
-                var fuleCost = (totalMiles / (avgMiles * (1 - fuleReduction)) * fulePrice).toFixed(2);
-                $('#ft-fc-2').val(fuleCost);
+                var fuelPrice = parseFloat($('#current-gas-price').val());
+                var fuelCost = (totalMiles / (avgMiles * (1 - fuelReduction)) * fuelPrice).toFixed(2);
+                $('#ft-fc-2').val(fuelCost);
                 $('#ft-tr-2').trigger('click');
             })
 
             $('#ft-tr-2').on('click', function () {
                 var rate = parseFloat($('#ft-r-2').val());
                 var totalMiles = parseFloat($('#ft-tm-2').val());
-                var fuleCost = parseFloat($('#ft-fc-2').val());
-                $('#ft-tr-2').val(((rate) - (fuleCost)).toFixed(2));
+                var fuelCost = parseFloat($('#ft-fc-2').val());
+                $('#ft-tr-2').val(((rate) - (fuelCost)).toFixed(2));
                 $('#ft-trpm-2').trigger('click');
             })
 
