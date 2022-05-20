@@ -162,6 +162,13 @@ input[type=number] {
     padding-right: 7px;
 }
        
-    
+
+.button {
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    background: #00FF00;
+    color: black;
+    margin-bottom: 7px;
 } 
 
