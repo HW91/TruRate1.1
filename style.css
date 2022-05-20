@@ -28,7 +28,7 @@ body {
     color: white;
     margin-bottom: 7px;
 }
-    #avg-mile-per-gellon,#current-gas-price{
+    #avg-mile-per-gallon,#current-gas-price{
         float: right;
         clear: right;
         width: 25%;
@@ -141,7 +141,7 @@ input[type=number] {
     color: white;
     margin-bottom: 7px;
 }
-#avg-mile-per-gellon,#current-gas-price{
+#avg-mile-per-gallon,#current-gas-price{
     float: right;
     clear: right;
 
