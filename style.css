@@ -91,6 +91,16 @@ input[type=number] {
 
 }
 
+.single-table input[type=date] {
+    width: 100%;
+    padding: 3px;
+}
+
+input[type=date] {
+    text-align: center;
+
+}
+
 .table-bottom table {
     width: 100%;
     padding-top: 5px;
