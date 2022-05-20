@@ -69,7 +69,7 @@
                 var weight = parseFloat($('#ft-w-1').val());
                 var fuleReduction = parseFloat($('#ft-frh-1').val());
                 var totalMiles = parseFloat($('#ft-tm-1').val());
-                var avgMiles = parseFloat($('#avg-mile-per-gellon').val());
+                var avgMiles = parseFloat($('#avg-mile-per-gallon').val());
                 var fulePrice = parseFloat($('#current-gas-price').val());
                 var fuleCost = (totalMiles / (avgMiles * (1 - fuleReduction)) * fulePrice).toFixed(2);
                 $('#ft-fc-1').val(fuleCost);
@@ -185,7 +185,7 @@
                 var weight = parseFloat($('#ft-w-2').val());
                 var fuleReduction = parseFloat($('#ft-frh-2').val());
                 var totalMiles = parseFloat($('#ft-tm-2').val());
-                var avgMiles = parseFloat($('#avg-mile-per-gellon').val());
+                var avgMiles = parseFloat($('#avg-mile-per-gallon').val());
                 var fulePrice = parseFloat($('#current-gas-price').val());
                 var fuleCost = (totalMiles / (avgMiles * (1 - fuleReduction)) * fulePrice).toFixed(2);
                 $('#ft-fc-2').val(fuleCost);
