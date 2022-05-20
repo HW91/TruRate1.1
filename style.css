@@ -163,12 +163,11 @@ input[type=number] {
 }
        
 
-.button {
+.button-onclick {
     text-align: center;
     width: 100px;
     font-size: 20px;
-    background: #00FF00;
+    background: #0335fc;
     color: black;
-    margin-bottom: 7px;
 } 
 
