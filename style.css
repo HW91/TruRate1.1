@@ -165,11 +165,12 @@ input[type=number] {
 
 .btn-1 {
     text-align: center;
-    width: 100px;
+    width: 140px;
     border: 1px solid white;
     border-radius: 20px;
     font-size: 20px;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     background: #00A125;
     color: white;
 } 
