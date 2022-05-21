@@ -89,12 +89,12 @@
 
             })
 
-            $('#ft-tdr-1').on('click', function () {
-                var trueRate = parseFloat($('#ft-tr-1').val());
-                var days = parseFloat($('#ft-d-1').val());
-                $('#ft-tdr-1').val(((trueRate) / (days)).toFixed(2));
-                $('#ft-rpm-1').trigger('click')
-            })
+          //  $('#ft-tdr-1').on('click', function () {
+    //            var trueRate = parseFloat($('#ft-tr-1').val());
+    //            var days = parseFloat($('#ft-d-1').val());
+    //            $('#ft-tdr-1').val(((trueRate) / (days)).toFixed(2));
+    //            $('#ft-rpm-1').trigger('click')
+    //        })
 
 
             $('#ft-d-1').on('input', function () {
@@ -205,12 +205,12 @@
 
             })
 
-            $('#ft-tdr-2').on('click', function () {
-                var trueRate = parseFloat($('#ft-tr-2').val());
-                var days = parseFloat($('#ft-d-2').val());
-                $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
-                $('#ft-rpm-2').trigger('click')
-            })
+       //     $('#ft-tdr-2').on('click', function () {
+       //         var trueRate = parseFloat($('#ft-tr-2').val());
+       //         var days = parseFloat($('#ft-d-2').val());
+        //        $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
+       //         $('#ft-rpm-2').trigger('click')
+       //     })
 
 
             $('#ft-d-2').on('input', function () {
