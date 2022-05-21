@@ -53,6 +53,8 @@ tr {
 
     width: 33.333%;
     margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 th {
@@ -65,8 +67,8 @@ th {
 td {
     text-align: center;
     width: 33.333%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .table table{
