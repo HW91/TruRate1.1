@@ -189,9 +189,9 @@ input[type=date] {
     color: white;
 } 
 
-p {
-    background-color: #f3f3f3;
-    border: 1px solid black;
-    outline: none;
-    Line-height: 150%;
-}
+p{position:relative;margin-left:2em;background-color:lightgrey}
+p.Clear{overflow:auto}
+span{display:inline-block}
+p>span:first-child{position:absolute;left:-1.5em}
+.Left{float:left}
+.Right{float:right}
