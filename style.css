@@ -32,6 +32,7 @@ body {
         float: right;
         clear: right;
         width: 25%;
+        padding-bottom: 2px;
 
     }
 .title-item label {
@@ -53,8 +54,6 @@ tr {
 
     width: 33.333%;
     margin: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 th {
