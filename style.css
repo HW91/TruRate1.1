@@ -15,7 +15,7 @@ body {
     border: 2px solid #34495E;
     max-width: 700px;
     margin: 20px auto;
-   overflow: none;
+    overflow: none;
 
 
 }
@@ -53,8 +53,8 @@ tr {
 
     width: 33.333%;
     margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 th {
@@ -67,19 +67,19 @@ th {
 td {
     text-align: center;
     width: 33.333%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .table table{
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 border-top: 1px solid #34495E;
 border-bottom: 1px solid #34495E;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .single-table {
