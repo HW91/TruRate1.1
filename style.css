@@ -25,7 +25,7 @@ body {
     text-align: center;
     font-size: 25px;
     background: #34495E;
-    color: white;
+    color: black;
     margin-bottom: 7px;
 }
     #avg-mile-per-gallon,#current-gas-price{
@@ -66,17 +66,14 @@ th {
 td {
     text-align: center;
     width: 33.333%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .table table{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-border-top: 1px solid #34495E;
-border-bottom: 1px solid #34495E;
+    width: 100%;    
+    border-top: 1px solid #34495E;
+    border-bottom: 1px solid #34495E;
     padding-top: 10px;
     padding-bottom: 10px;
 }
