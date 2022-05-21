@@ -73,6 +73,8 @@ td {
 
 .table table{
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 border-top: 1px solid #34495E;
 border-bottom: 1px solid #34495E;
