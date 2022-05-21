@@ -52,7 +52,7 @@ body {
 tr {
 
     width: 33.333%;
-    line-height: 16px;
+    margin: 5px;
 }
 
 th {
