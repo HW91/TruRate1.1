@@ -1,4 +1,9 @@
+           let btnSuccess = document.querySelector('#success');
+
+           btnSucess.addEventListener('click', () ==> btnSuccess.style.backgroundColor= '#337ab7')
+
             $(document).ready(function () {
+            
 
             // Load 1
 
@@ -285,6 +290,24 @@
                 }
 
             })
+                        
+    function calculateDay(){
+    var pd1= document.getElementById("pd1").value;
+    var dd1= document.getElementById("dd1").value;
+    var pd2= document.getElementById("pd2").value;
+    var dd2= document.getElementById("dd2").value;
+    const dateOne = new Date(pd1);
+    const dateTwo = new Date(dd1);
+    const dateThree = new Date(pd2);
+    const dateFour = new Date(dd2);
+    const time = Math.abs(dateTwo - dateOne);
+    const days = Math.abs(time / (1000 * 60 * 60 * 24));
+    document.getElementByID("output1").innerHTML=days;
+    const time = Math.abs(dateThree - dateFour);
+    const days = Math.abs(time / (1000 * 60 * 60 * 24));
+    document.getElementByID("output2").innerHTML=days;
+    }
+
 
 
             // $('#check-color').on('click', function () {
