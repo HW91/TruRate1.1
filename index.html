@@ -113,8 +113,8 @@
                     </tr>
                     <tr>
                         <td class="label-td">Days</td>
-                        <td><p id="output"></p></td>
-                        <td><input type="number" class="disable" readonly name="" id="days2"></td>              
+                        <td><p id="output1"></p></td>
+                        <td><p id="output2"></p></td>              
                     </tr>
                     <tr>
                         <td class="label-td">Rate Per Mile $</td>
@@ -170,11 +170,18 @@
 function calculateDays(){
 var pd1= document.getElementById("pd1").value;
 var dd1= document.getElementById("dd1").value;   
+var pd2= document.getElementById("pd2").value;
+var dd2= document.getElementById("dd2").value; 
 const dateOne = new Date(pd1);
 const dateTwo = new Date(dd1);
-const time = Math.abs(dateTwo - dateOne);
-const days = Math.ceil(time / (1000 * 60 * 60 * 24));
-document.getElementById("output").innerHTML=days;
+const dateThree = new Date(pd2);
+const dateFour = new Date(dd2);
+const time1 = Math.abs(dateTwo - dateOne);
+const time2 = Math.abs(dateFour - dateThree);   
+const days1 = Math.ceil(time1 / (1000 * 60 * 60 * 24));
+const days2 = Math.ceil(time2 / (1000 * 60 * 60 * 24));
+document.getElementById("output1").innerHTML=days1;
+document.getElementById("output2").innerHTML=days2;
 }
 </script>
    
