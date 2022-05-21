@@ -87,12 +87,13 @@
                 $('#ft-trpm-1').val(((truRate) / (totalMiles)).toFixed(2));
 
             })
-            
-            //load #1 day code removed//
-            document.getElementById("days1").innerHTML = Math.ceil(dd1 - pd1);
-            //
-            //
 
+            //$('#ft-tdr-1').on('click', function () {
+            //    var truRate = parseFloat($('#ft-tr-1').val());
+            //    var days = parseFloat($('#ft-d-1').val());
+            //    $('#ft-tdr-1').val(((truRate) / (days)).toFixed(2));
+            //    $('#ft-rpm-1').trigger('click')
+            //})
 
             $('#ft-d-1').on('input', function () {
                 $('#ft-tdr-1').trigger('click');
@@ -192,15 +193,19 @@
 
             $('#ft-trpm-2').on('click', function () {
                 var totalMiles = parseFloat($('#ft-tm-2').val());
-                var truRate = parseFloat($('#ft-tr-2').val());
-                $('#ft-trpm-2').val(((truRate) / (totalMiles)).toFixed(2));
+                var trueRate = parseFloat($('#ft-tr-2').val());
+                $('#ft-trpm-2').val(((trueRate) / (totalMiles)).toFixed(2));
 
             })
 
-            //load #2 day code removed
-            document.getElementById("days2").innerHTML = Math.ceil(dd2 - pd2);          
-            //
-            //
+            //load #2
+            //$('#ft-tdr-2').on('click', function () {
+            //    var trueRate = parseFloat($('#ft-tr-2').val());
+            //    var days = parseFloat($('#ft-d-2').val());
+            //    $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
+            //    $('#ft-rpm-2').trigger('click')
+            //})
+
 
             $('#ft-d-2').on('input', function () {
                 $('#ft-tdr-2').trigger('click');
