@@ -87,18 +87,12 @@
                 $('#ft-trpm-1').val(((truRate) / (totalMiles)).toFixed(2));
 
             })
-            //load #1
-            //$('#ft-tdr-1').on('click', function () {
-            //    var truRate = parseFloat($('#ft-tr-1').val());
-            //    var days = parseFloat($('#ft-d-1').val());
-            //    $('#ft-tdr-1').val(((truRate) / (days)).toFixed(2));
-            //    $('#ft-rpm-1').trigger('click')
-            //})
-            var days1 = function(pd1, dd1) {
-            dt1 = new Date(pd1);
-            dt2 = new Date(dd1);
-            return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
-            }
+            
+            //load #1 day code removed//
+            document.getElementById("days1").innerHTML = Math.ceil(dd1 - pd1);
+            //
+            //
+
 
             $('#ft-d-1').on('input', function () {
                 $('#ft-tdr-1').trigger('click');
@@ -203,19 +197,10 @@
 
             })
 
-            //load #2
-            //$('#ft-tdr-2').on('click', function () {
-            //    var truRate = parseFloat($('#ft-tr-2').val());
-            //    var days = parseFloat($('#ft-d-2').val());
-            //    $('#ft-tdr-2').val(((truRate) / (days)).toFixed(2));
-            //    $('#ft-rpm-2').trigger('click')
-            //})
-            var days2 = function(pd2, dd2) {
-            dt11 = new Date(pd2);
-            dt22 = new Date(dd2);
-            return Math.floor((Date.UTC(dt22.getFullYear(), dt22.getMonth(), dt22.getDate()) - Date.UTC(dt11.getFullYear(), dt11.getMonth(), dt11.getDate()) ) /(1000 * 60 * 60 * 24));
-            }
-
+            //load #2 day code removed
+            document.getElementById("days2").innerHTML = Math.ceil(dd2 - pd2);          
+            //
+            //
 
             $('#ft-d-2').on('input', function () {
                 $('#ft-tdr-2').trigger('click');
