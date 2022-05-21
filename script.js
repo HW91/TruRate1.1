@@ -12,8 +12,6 @@
                 $('#ft-tdr-1').trigger('click');
             });
 
-
-
             $('#ft-dhp-1').on('input', function () {
                 var value1 = parseFloat($('#ft-trim-1').val());
                 var value2 = parseFloat($('#ft-dhp-1').val());
@@ -90,35 +88,29 @@
 
             })
 
-            $('#ft-tdr-1').on('click', function () {
-                var truRate = parseFloat($('#ft-tr-1').val());
-                var days = parseFloat($('#ft-d-1').val());
-                $('#ft-tdr-1').val(((truRate) / (days)).toFixed(2));
-                $('#ft-rpm-1').trigger('click')
-            })
-
+            //$('#ft-tdr-1').on('click', function () {
+            //    var truRate = parseFloat($('#ft-tr-1').val());
+            //    var days = parseFloat($('#ft-d-1').val());
+            //    $('#ft-tdr-1').val(((truRate) / (days)).toFixed(2));
+            //    $('#ft-rpm-1').trigger('click')
+            //})
 
             $('#ft-d-1').on('input', function () {
                 $('#ft-tdr-1').trigger('click');
                 $('.total1').trigger('click');
             })
 
-
             $('#ft-rpm-1').on('click', function () {
                 var rate = parseFloat($('#ft-r-1').val());
                 var totalMiles = parseFloat($('#ft-tm-1').val());
                 $('#ft-rpm-1').val(((rate) / (totalMiles)).toFixed(2));
             })
-
-
-
-
+                        
             ////
             //   working
             ///////
 
             // Load 2
-
 
             $('#ft-trim-2').on('input', function () {
                 var value1 = parseFloat($('#ft-trim-2').val());
@@ -206,12 +198,13 @@
 
             })
 
-            $('#ft-tdr-2').on('click', function () {
-                var trueRate = parseFloat($('#ft-tr-2').val());
-                var days = parseFloat($('#ft-d-2').val());
-                $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
-                $('#ft-rpm-2').trigger('click')
-            })
+            //load #2
+            //$('#ft-tdr-2').on('click', function () {
+            //    var trueRate = parseFloat($('#ft-tr-2').val());
+            //    var days = parseFloat($('#ft-d-2').val());
+            //    $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
+            //    $('#ft-rpm-2').trigger('click')
+            //})
 
 
             $('#ft-d-2').on('input', function () {
@@ -229,11 +222,7 @@
 
             ////final
 
-
             ///////// calculate total 1#
-
-
-
 
 
             $('.total1').on('click', function () {
@@ -286,25 +275,6 @@
                 }
 
             })
-                        
-    function calculateDay(){
-    var pd1= document.getElementById("pd1").value;
-    var dd1= document.getElementById("dd1").value;
-    var pd2= document.getElementById("pd2").value;
-    var dd2= document.getElementById("dd2").value;
-    const dateOne = new Date(pd1);
-    const dateTwo = new Date(dd1);
-    const dateThree = new Date(pd2);
-    const dateFour = new Date(dd2);
-    const time = Math.abs(dateTwo - dateOne);
-    const days = Math.abs(time / (1000 * 60 * 60 * 24));
-    document.getElementByID("output1").innerHTML=days;
-    const time = Math.abs(dateThree - dateFour);
-    const days = Math.abs(time / (1000 * 60 * 60 * 24));
-    document.getElementByID("output2").innerHTML=days;
-    }
-
-
 
             // $('#check-color').on('click', function () {
 
@@ -338,7 +308,6 @@
             //         $('#ft-tr-1').removeClass('dark-green');
             //     }
 
-                
             // })
 
         });
