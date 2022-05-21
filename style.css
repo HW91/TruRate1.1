@@ -65,7 +65,8 @@ th {
 td {
     text-align: center;
     width: 33.333%;
-   
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .table table{
