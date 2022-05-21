@@ -189,9 +189,4 @@ input[type=date] {
     color: white;
 } 
 
-p{position:relative;margin-left:2em;background-color:lightgrey}
-p.Clear{overflow:auto}
-span{display:inline-block}
-p>span:first-child{position:absolute;left:-1.5em}
-.Left{float:left}
-.Right{float:right}
+   
