@@ -25,14 +25,14 @@ body {
     text-align: center;
     font-size: 25px;
     background: #34495E;
-    color: black;
+    color: red;
     margin-bottom: 7px;
 }
     #avg-mile-per-gallon,#current-gas-price{
         float: right;
         clear: right;
         width: 25%;
-        padding-bottom: 2px;
+        padding-bottom: 5px;
 
     }
 .title-item label {
