@@ -59,14 +59,16 @@
                     </tr>
 
                     <tr>
+                        <!--changed dates to number-->
                         <td class="label-td">Pickup Date</td>
-                        <td><input type="date" class="bg-color" id="pd1"></td>
-                        <td><input type="date" class="bg-color" id="pd2"></td>
+                        <td><input type="number" class="bg-color" id="pd1"></td>
+                        <td><input type="number" class="bg-color" id="pd2"></td>
                     </tr>
                     <tr>
+                        <!--changed dates to number-->
                         <td class="label-td">Delivery Date</td>
-                        <td><input type="date" class="bg-color" id="dd1"></td>
-                        <td><input type="date" class="bg-color" id="dd2"></td>
+                        <td><input type="number" class="bg-color" id="dd1"></td>
+                        <td><input type="number" class="bg-color" id="dd2"></td>
                     </tr>
                     <tr>
                         <td class="label-td">Trip Miles</td>
@@ -160,7 +162,26 @@
         </div>
     </div>
     </div>
+    
+    <input type="date" id="d1">
+    <input type="date" id="d2">
+    <button onclick="calculateDays()">Calculate</button>
+    <p id="output"></p>
 
-</body>      
+
+</body>  
+    
+<script> 
+function calculateDays(){
+var d1= document.getElementById("d1").value;
+var d2= document.getElementById("d2").value;   
+const dateOne = new Date(d1);
+const dateTwo = new Date(d2);
+const time = Math.abs(dateTwo - dateOne);
+const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+document.getElementById("output").innerHTML=days;
+}
+</script>
+   
         
 </html>
