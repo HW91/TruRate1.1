@@ -52,6 +52,7 @@ body {
 tr {
 
     width: 33.333%;
+    line-height: 16px;
 }
 
 th {
@@ -116,7 +117,6 @@ input[type=date] {
     background-color: #f3f3f3;
     border: 1px solid black;
     outline: none;
-    line-height: 16px;
 }
 
 .bg-color {
