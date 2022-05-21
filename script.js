@@ -95,7 +95,7 @@
             //    $('#ft-rpm-1').trigger('click')
             //})
 
-            $('#ft-d-1').on('input', function () {
+            $('#output1').on('input', function () {
                 $('#ft-tdr-1').trigger('click');
                 $('.total1').trigger('click');
             })
@@ -207,7 +207,7 @@
             //})
 
 
-            $('#ft-d-2').on('input', function () {
+            $('#output').on('input', function () {
                 $('#ft-tdr-2').trigger('click');
                 $('.total1').trigger('click');
                 $('.check-color').trigger('click');
