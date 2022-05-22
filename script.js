@@ -199,13 +199,15 @@
             })
 
             //load #2
-            $('#ft-tdr-2').on('click', function () {
-                var trueRate = parseFloat($('#ft-tr-2').val());
-                var days = parseFloat($('#ft-d-2').val());
-                $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
-                $('#ft-rpm-2').trigger('click')
+            //$('#ft-tdr-2').on('click', function () {
+            //    var trueRate = parseFloat($('#ft-tr-2').val());
+            //    var days = parseFloat($('#ft-d-2').val());
+            //    $('#ft-tdr-2').val(((trueRate) / (days)).toFixed(2));
+            //    $('#ft-rpm-2').trigger('click')
+            //})
+            $('#ft-tdr-2').on('click', function multiply(ft-tr-2, ft-d-2){
+                return ft-tr-2 * ft-d-2;
             })
-
 
             $('#output').on('input', function () {
                 $('#ft-tdr-2').trigger('click');
